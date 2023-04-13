@@ -80,6 +80,7 @@ function checkLetter(e) {
         if (incorrectGuesses <= 0) {
             // Game over
             playAgain = confirm("You have lost the game.\n Would you like to play again?");
+            points = 0;
             nextWord(playAgain);
         } else {
             alert("Incorrect guess: " + letter);
