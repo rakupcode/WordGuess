@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word Guess</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		body{
+			text-align: center;
+		}
+        h1{
+            padding: 0 0 0 15px;
+            font-size: 32px;
+            position: relative;
+            align-content: center;
+        }
+        #word-state{
+            position: relative;
+            align-items: center;
+            width: 100%;
+			font-size: 40px;
+        }
+        div {
+        font-size: large;
+        float: left;
+        position: relative;
+		width: 100%;
+      }
+    </style>
+</head>
+<body>
+	<div><h1>Guess the Word</h1></div>
+	<div><p>Guess the word by typing letters:</p></div>
+	<div><p id="word-state"><?php echo implode(" ", $currentState); ?></p></div>
+	<div><p>LIVES: <span id="incorrect-guesses">5</span></p></div>
+	<div><p>POINTS: <span id="points">0</span></p></div>
+	<div id="message"></div>
+	<script src="guess.js"></script>
+</body>
+</html>

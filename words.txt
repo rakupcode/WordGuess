@@ -1,0 +1,13 @@
+elephant
+desert
+doctor
+black
+artist
+family
+wheat
+paint
+place
+quantum
+strong
+number
+delete
